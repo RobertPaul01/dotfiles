@@ -3,4 +3,5 @@
 [alias]
 	lg = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate -20 --reverse
 	cam = commit -am
-	hard-clean = "!git clean -f -d && git stash"
+	hard-clean = !git clean -f -d && git stash
+	clear-remote-local = !git branch -r | grep $1 | xargs git branch -rD
