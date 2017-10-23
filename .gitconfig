@@ -2,6 +2,7 @@
 	email = robert20paul@gmail.com
 [alias]
 	cam = commit -am
+	up-pull = pull upstream master
 	lg = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate -20 --reverse
 	hard-clean = !git clean -fd && git stash
 	clear-remote-local = !git branch -r | grep $1 | xargs git branch -rD
