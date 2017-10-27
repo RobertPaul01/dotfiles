@@ -21,6 +21,10 @@ function grep_stderr --description 'Search stderr'
 	end
 end
 
+function kill_port
+	lsof -ti :$argv | xargs kill -9
+end
+
 # Alias functions
 function lls
 	ls -lhaF
