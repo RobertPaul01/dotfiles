@@ -13,6 +13,10 @@ function fish_prompt
         printf '%s%s%s> ' (set_color purple) (prompt_pwd) (set_color normal)
 end
 
+function get_perm
+	stat -f "%OLp" $args[1]
+end
+
 function grep_stderr --description 'Search stderr'
 	if count $argv | grep 2
 		eval $argv[1] 2>&1 | grep $argv[2]
