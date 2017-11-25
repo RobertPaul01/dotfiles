@@ -9,4 +9,5 @@
 	new = !sh -c 'git lg $1@{1}..$1@{0} "$@"'
 	sortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
 	undo-reset = reset 'HEAD@{1}'
+	search-todo = !sh -c 'git diff | grep TODO'
 
