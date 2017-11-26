@@ -5,6 +5,10 @@ function edit_source
 	vi $source 
 end
 
+function gitconfig
+	vi ~/.gitconfig
+end
+
 function reload_source
 	source $source 
 end
