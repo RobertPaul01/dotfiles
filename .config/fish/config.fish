@@ -1,4 +1,5 @@
 set source ~/.config/fish/config.fish
+set -gx PATH ~/.cabal/bin/ $PATH
 
 # Functions
 function edit_source
