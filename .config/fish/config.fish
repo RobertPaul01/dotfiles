@@ -1,5 +1,5 @@
 set source ~/.config/fish/config.fish
-set -gx PATH ~/.cabal/bin/ $PATH
+set -gx PATH ~/Library/Haskell/bin/ $PATH
 
 # Functions
 function edit_source
