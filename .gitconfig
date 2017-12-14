@@ -11,4 +11,6 @@
 	sortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
 	undo-reset = reset 'HEAD@{1}'
 	search-todo = !sh -c 'git diff | grep TODO'
+	merge-theirs = merge --strategy=recursive --strategy-option=theirs
+	merge-ours = merge --strategy=recursive --strategy-option=ours
 

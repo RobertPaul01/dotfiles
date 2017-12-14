@@ -35,12 +35,22 @@ function kill_port
 	lsof -ti :$argv | xargs kill -9
 end
 
+function clean_yarn_cache
+	npm cache clean --force
+	yarn cache clean
+	rm -rfd $TMPDIR/*
+end
+
+function clean_dd
+	rm -rfd ~/Library/Developer/Xcode/DerivedData/*
+end
+
 # Alias functions
 function lls
 	ls -lhaF
 end
 
 function vi
-	vim $argv
+	/usr/local/bin/vim $argv
 end
 
