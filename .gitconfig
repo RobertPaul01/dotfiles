@@ -12,5 +12,7 @@
 	undo-reset = reset 'HEAD@{1}'
 	search-todo = !sh -c 'git diff | grep TODO'
 	merge-theirs = merge --strategy=recursive --strategy-option=theirs
+	rebase-theirs = rebase --strategy=recursive --strategy-option=theirs
 	merge-ours = merge --strategy=recursive --strategy-option=ours
+	rebase-ours = rebase --strategy=recursive --strategy-option=ours
 
