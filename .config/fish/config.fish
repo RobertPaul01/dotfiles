@@ -1,7 +1,8 @@
 set source ~/.config/fish/config.fish
+
 set -gx PATH ~/Library/Android/sdk/platform-tools $PATH
 set -gx PATH ~/Library/Haskell/bin $PATH
-set -gx PATH /opt/local/bin $PATH
+set -gx PATH ~/.opam/packages $PATH
 
 # Functions
 function edit_source
