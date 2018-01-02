@@ -1,8 +1,7 @@
 set source ~/.config/fish/config.fish
 
-set -gx PATH ~/Library/Android/sdk/platform-tools $PATH
-set -gx PATH ~/Library/Haskell/bin $PATH
-set -gx PATH ~/.opam/packages $PATH
+set -gx PATH /Users/Robby/Library/Android/sdk/platform-tools $PATH
+set -gx PATH /Users/Robby/Library/Haskell/bin $PATH
 
 # Functions
 function edit_source
@@ -56,3 +55,5 @@ function vi
 	/usr/local/bin/vim $argv
 end
 
+# OPAM configuration
+source /Users/Robby/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
