@@ -53,4 +53,4 @@ function vi
 end
 
 # OPAM configuration
-source /Users/Robby/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+source ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
