@@ -16,3 +16,5 @@
 	merge-ours = merge --strategy=recursive --strategy-option=ours
 	rebase-ours = rebase --strategy=recursive --strategy-option=ours
 
+[core]
+	excludesfile = /Users/Robby/.gitignore_global
