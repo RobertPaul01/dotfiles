@@ -42,6 +42,10 @@ function clean_dd
     rm -rfd ~/Library/Developer/Xcode/DerivedData/*
 end
 
+function exp_rep_ignore
+    vi $PWD/.git/info/exclude
+end
+
 # Alias functions
 function lls
     ls -lhaF
