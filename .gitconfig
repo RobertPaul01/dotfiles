@@ -17,4 +17,4 @@
 	rebase-ours = rebase --strategy=recursive --strategy-option=ours
 
 [core]
-	excludesfile = /Users/Robby/.gitignore_global
+	excludesfile = ~/.gitignore_global
