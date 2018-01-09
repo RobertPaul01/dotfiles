@@ -32,10 +32,12 @@ function kill_port
     lsof -ti :$argv | xargs kill -9
 end
 
-function clean_yarn_cache
+function clean_js_cache
     npm cache clean --force
     yarn cache clean
-    rm -rfd $TMPDIR/*
+    rm -Rfd $TMPDIR/react*
+    rm -Rfd $TMPDIR/haste*
+    rm -Rfd $TMPDIR/jest*
 end
 
 function clean_dd
