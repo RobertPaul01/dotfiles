@@ -48,6 +48,10 @@ function exp_rep_ignore
     vi $PWD/.git/info/exclude
 end
 
+function start_browser
+    qutebrowser 2>/dev/null &
+end
+
 # Alias functions
 function lls
     ls -lhaF
