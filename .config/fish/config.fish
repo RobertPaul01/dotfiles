@@ -32,6 +32,10 @@ function kill_port
     lsof -ti :$argv | xargs kill -9
 end
 
+function diff-ignore
+    git diff -- . ":(exclude)$argv"
+end
+
 function clean_js_cache
     npm cache clean --force
     yarn cache clean
