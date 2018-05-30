@@ -48,6 +48,11 @@ function clean_dd
     rm -rfd ~/Library/Developer/Xcode/DerivedData/*
 end
 
+function clean_repos
+    git branch | grep -v $argv | xargs git push -d origin
+    git branch | grep -v $argv | xargs git branch -D
+end
+
 function exp_rep_ignore
     vi $PWD/.git/info/exclude
 end
