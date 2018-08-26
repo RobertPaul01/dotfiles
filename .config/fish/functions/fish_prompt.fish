@@ -20,8 +20,8 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     if test (__fish_vcs_prompt)
-      printf '[%s] %s%s%s%s%s%s (%s)%s λ ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_prompt_normal" (__fish_vcs_prompt) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
+      printf '[%s] %s%s%s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_prompt_normal" (__fish_vcs_prompt) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
     else
-      printf '[%s] %s%s%s%s (%s)%s λ ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
+      printf '[%s] %s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
     end
 end

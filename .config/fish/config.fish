@@ -2,6 +2,7 @@ set source ~/.config/fish/config.fish
 
 set -gx fish_color_cwd brcyan
 set -gx __fish_git_prompt_color_dirtystate green
+set -gx DEBUG 1
 
 # Functions
 function edit_source
