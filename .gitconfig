@@ -1,6 +1,6 @@
 [user]
-	email = robert20paul@gmail.com
-	name = Robert
+  name = Robert 
+  email = robert20paul@gmail.com  
 [alias]
 	cam = commit -am
 	up-pull = pull upstream master

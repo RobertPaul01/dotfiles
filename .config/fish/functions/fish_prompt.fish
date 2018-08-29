@@ -5,6 +5,10 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_git_prompt_color_branch magenta --bold
     end
 
+    #if not set -q __fish_git_prompt_show_informative_status
+    #set -g __fish_git_prompt_show_informative_status 1
+    #end
+
     if not set -q __fish_prompt_normal
         set -g __fish_prompt_normal (set_color normal)
     end
@@ -20,8 +24,8 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     if test (__fish_vcs_prompt)
-      printf '[%s] %s%s%s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_prompt_normal" (__fish_vcs_prompt) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
+      printf '[%s] %s%s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" (prompt_pwd) "$__fish_prompt_normal" (__fish_vcs_prompt) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
     else
-      printf '[%s] %s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" "$__fish_prompt_cwd" "$PWD" "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
+      printf '[%s] %s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" (prompt_pwd) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
     end
 end

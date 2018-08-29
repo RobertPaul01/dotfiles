@@ -4,6 +4,7 @@ if &shell =~# 'fish$'
 endif
 
 set runtimepath^=~/.vim/bundle/vim-fish/
+set runtimepath^=~/.vim/bundle/vim-airline/
 filetype off
 filetype plugin indent on
 syntax enable
@@ -17,4 +18,6 @@ set expandtab
 set shiftwidth=2
 
 autocmd FileType cpp ClangFormatAutoEnable
+
+colorscheme taste
 
