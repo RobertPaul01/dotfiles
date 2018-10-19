@@ -5,6 +5,10 @@ set -gx __fish_git_prompt_color_dirtystate green
 set -gx DEBUG 1
 
 set -gx PATH /usr/local/mysql/bin $PATH
+set -gx PATH $HOME/.cargo/bin $PATH
+
+set -gx ANDROID_HOME $HOME/Library/Android/sdk
+set -gx PATH $ANDROID_HOME/tools $PATH
 
 # Functions
 function edit_source

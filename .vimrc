@@ -21,3 +21,5 @@ autocmd FileType cpp ClangFormatAutoEnable
 
 colorscheme taste
 
+inoremap <F1> <esc>:w<cr>
+
