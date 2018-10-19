@@ -5,9 +5,10 @@ endif
 
 set runtimepath^=~/.vim/bundle/vim-fish/
 set runtimepath^=~/.vim/bundle/vim-airline/
-filetype off
+set runtimepath^=~/.vim/bundle/idris-vim/
+syntax on
+filetype on
 filetype plugin indent on
-syntax enable
 set number
 set mouse=a
 set clipboard=unnamed
