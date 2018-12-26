@@ -6,8 +6,8 @@ endif
 set runtimepath^=~/.vim/bundle/vim-fish/
 set runtimepath^=~/.vim/bundle/vim-airline/
 set runtimepath^=~/.vim/bundle/idris-vim/
+set runtimepath^=~/.vim/bundle/ctrlp.vim/
 syntax on
-filetype on
 filetype plugin indent on
 set number
 set mouse=a
@@ -23,4 +23,6 @@ autocmd FileType cpp ClangFormatAutoEnable
 colorscheme taste
 
 inoremap <F1> <esc>:w<cr>
+
+map <C-o> :CtrlP<CR>
 
