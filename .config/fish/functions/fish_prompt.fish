@@ -23,9 +23,5 @@ function fish_prompt --description 'Write out the prompt'
         set __fish_color_status (set_color -o red)
     end
 
-    if test (__fish_vcs_prompt); and false
-      printf '[%s] %s%s%s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" (prompt_pwd) "$__fish_prompt_normal" (__fish_vcs_prompt) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
-    else
-      printf '[%s] %s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" (prompt_pwd) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
-    end
+    printf '[%s] %s%s%s (%s)%s: ' (date "+%H:%M:%S") "$__fish_color_blue" (prompt_pwd) "$__fish_color_status" "$last_status" "$__fish_prompt_normal"
 end

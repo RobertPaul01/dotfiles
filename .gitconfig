@@ -2,6 +2,9 @@
   name = Robert 
   email = robert20paul@gmail.com  
 [alias]
+  s = status
+  b = branch
+  d = diff
 	cam = commit -am
 	up-pull = pull upstream master
 	lg = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate -20 --reverse
