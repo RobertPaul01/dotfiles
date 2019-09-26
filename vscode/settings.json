@@ -1,0 +1,37 @@
+{
+  "workbench.editor.enablePreview": false,
+  "editor.parameterHints.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.hover.enabled": false,
+  "vim.debug.silent": true,
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": false,
+  "extensions.ignoreRecommendations": true,
+  "breadcrumbs.enabled": false,
+  "workbench.fontAliasing": "auto",
+  "workbench.colorTheme": "Monokai",
+  "window.zoomLevel": 0,
+  "scm.diffDecorations": "none",
+  "editor.lightbulb.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  "editor.codeLens": false,
+  "editor.folding": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.fontSize": 14,
+  "editor.renderIndentGuides": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

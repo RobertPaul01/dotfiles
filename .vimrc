@@ -21,7 +21,7 @@ set shiftwidth=2
 
 autocmd FileType cpp ClangFormatAutoEnable
 
-colorscheme taste
+"colorscheme taste
 
 inoremap <F1> <esc>:w<cr>
 
@@ -35,3 +35,11 @@ augroup END
 
 " press <Leader>S (i.e., \S) to not automatically check for errors
 nnoremap <Leader>S :SyntasticToggleMode<CR>
+
+function ConfigGitCommit()
+  set spell spelllang=en_us
+endfun
+autocmd FileType gitcommit call ConfigGitCommit()
+
+set clipboard=unnamedplus
+
